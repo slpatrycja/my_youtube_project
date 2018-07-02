@@ -1,0 +1,31 @@
+#video1 {
+    margin-left:0;
+    padding:0;
+}
+
+#videoframe{
+    padding:0;
+}
+.h3{
+    color:white;
+}
+#button{
+  background-color: rgb(204, 64, 64);
+  border-radius:5px;
+}
+
+li{
+    color: black;
+}
+
+.link{
+    float:right;
+    margin-right:30px;
+    text-align: center;
+}
+
+.disabled {
+    pointer-events: none;  /**<-----------*/
+    opacity: 0.95 !important;
+  }
+

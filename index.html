@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>YouTube</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="youtube.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="youtube.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 480px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 120%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      
+      <ul class="nav nav-pills nav-stacked">
+        <br>
+        <li class="btn btn-danger disabled" style="height: 70px; padding:0;"><h3 style="color:white;">PatTube</h3></li>
+        <br><br>
+          
+        <li id="sorry"><video preload="metadata" class="sorry" width="150" height="100" muted="muted">
+          <source src="sorry.mp4#t=0.7" type="video/mp4"></video>
+            <div class="link"><br><br>Halsey - Sorry</div>
+          </li>
+          
+        <li id="yellow"><video preload="metadata" class="yellow" width="150" height="100" muted="muted">
+          <source src="yellow.mp4#t=0.7" type="video/mp4"></video>
+            <div class="link"><br><br>Kina Grannis -<br> Yellow</div>
+          </li>
+           
+        <li id="withoutyou"><video preload="metadata" class="withoutyou" width="150" height="100" muted="muted">
+          <source src="withoutyou.mp4#t=0.7" type="video/mp4"></video>
+            <div class="link"><br><br> Hearts&Colors <br> - Without you</div>
+          </li>
+          
+        <li id="movie"><video preload="metadata" class="movie" width="150" height="100" muted="muted">
+          <source src="movie.mp4#t=0.7" type="video/mp4"></video>
+            <div class="link"><br><br>Downloaded <br>Movie</div>
+          </li>
+
+          <li id="eyesclosed"><video preload="metadata" class="eyesclosed" width="150" height="100" muted="muted">
+              <source src="eyesclosed.mp4#t=0.7" type="video/mp4"></video>
+                <div class="link"><br><br>Halsey - <br>Eyes Closed</div>
+              </li>            
+      </ul><br>
+    
+    </div>
+
+    <div class="col-sm-9">
+      
+        <hr>
+      <h4>&nbsp&nbsp&darr; Now playing &darr;</h4>
+      <hr>
+      <h3 id="title">&nbspHalsey - Eyes Closed (Stripped)</h3>
+      <div>
+      <video id = "video_content" width="800" height="440" muted="muted" autoplay controls>
+        <source id="video_source" src='eyesclosed.mp4' type='video/mp4'></video>
+      </div>
+      <br><br>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>® Patrycja Słabosz with Gregory&Monsters</p>
+</footer>
+
+</body>
+</html>
