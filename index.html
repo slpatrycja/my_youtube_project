@@ -79,12 +79,24 @@
       
         <hr>
       <h4>&nbsp&nbsp&darr; Now playing &darr;</h4>
-      <hr>
+      
+          <hr>
       <h3 id="title">&nbspHalsey - Eyes Closed (Stripped)</h3>
-      <div>
-      <video id = "video_content" width="800" height="440" muted="muted" autoplay controls>
+      <div class="video_container">
+      <video id = "video_content" width="800" height="440" muted autoplay>
         <source id="video_source" src='eyesclosed.mp4' type='video/mp4'></video>
-      </div>
+          <div class="controls">
+              <a href="#" id="fastbackwards" class="btn btn-default"><i class="glyphicon glyphicon-fast-backward"></i></a>
+              <a href="#" id="backwards" class="btn btn-default"><i class="glyphicon glyphicon-backward"></i></a>
+              <a href="#" id="stop" class="btn btn-default"><i class="glyphicon glyphicon-stop"></i></a>
+              <a href="#" id="play" class="btn btn-default"><i class="glyphicon glyphicon-play"></i></a>
+              <a href="#" id="pause" class="btn btn-default"><i class="glyphicon glyphicon-pause"></i></a>
+              <a href="#" id="forwards" class="btn btn-default"><i class="glyphicon glyphicon-forward"></i></a>
+              <a href="#" id="fastforwards" class="btn btn-default"><i class="glyphicon glyphicon-fast-forward"></i></a>
+              <a href="#" id="mute" class="btn btn-default"><i class="glyphicon glyphicon-volume-off"></i></button>
+              <a id="volume-up" class="btn btn-default"><i class="glyphicon glyphicon-volume-up"></i><input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1"></a>
+              </div>
+       </div>
       <br><br>
     </div>
   </div>
