@@ -1,110 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>YouTube</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="youtube.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="youtube.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 480px}
-    
+
+    .row.content {
+      height: 480px
+    }
+
+    #hr-title {
+      color: rgb(96, 126, 95);
+      background-color: rgb(96, 126, 95);
+      height: 5px
+    }
+
+    hr {
+      color: grey;
+      background-color: grey;
+      height: 3px;
+    }
+
     /* Set gray background color and 100% height */
+
     .sidenav {
       background-color: #f1f1f1;
       height: 120%;
     }
-    
+
     /* Set black background color, white text and some padding */
+
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-    
+
+    h1 {
+      /* color: #fff; */
+      font-size: 52px;
+      color: rgb(96, 126, 95);
+      font-family: 'Lobster', cursive;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
     /* On small screens, set height to 'auto' for sidenav and grid */
+
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height: auto;} 
+      .row.content {
+        height: auto;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      
-      <ul class="nav nav-pills nav-stacked">
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav">
+
+        <ul class="nav nav-pills nav-stacked">
+          <li class="btn" id="button" style="height: 100px; margin-top: 0;">
+            <h1>&#x266BPatTube</h1>
+          </li>
+          <hr id="hr-title">
+
+
+          <li id="sorry">
+            <video preload="metadata" class="sorry" width="150" height="100" muted="muted">
+              <source src="sorry.mp4#t=0.7" type="video/mp4">
+            </video>
+            <div class="link">
+              <br>
+              <br>Halsey - Sorry</div>
+          </li>
+
+          <li id="yellow">
+            <video preload="metadata" class="yellow" width="150" height="100" muted="muted">
+              <source src="yellow.mp4#t=0.7" type="video/mp4">
+            </video>
+            <div class="link">
+              <br>
+              <br>Kina Grannis -
+              <br> Yellow</div>
+          </li>
+
+          <li id="withoutyou">
+            <video preload="metadata" class="withoutyou" width="150" height="100" muted="muted">
+              <source src="withoutyou.mp4#t=0.7" type="video/mp4">
+            </video>
+            <div class="link">
+              <br>
+              <br> Hearts&Colors
+              <br> - Without you</div>
+          </li>
+
+          <li id="movie">
+            <video preload="metadata" class="movie" width="150" height="100" muted="muted">
+              <source src="movie.mp4#t=0.7" type="video/mp4">
+            </video>
+            <div class="link">
+              <br>
+              <br>Downloaded
+              <br>Movie</div>
+          </li>
+
+          <li id="eyesclosed">
+            <video preload="metadata" class="eyesclosed" width="150" height="100" muted="muted">
+              <source src="eyesclosed.mp4#t=0.7" type="video/mp4">
+            </video>
+            <div class="link">
+              <br>
+              <br>Halsey -
+              <br>Eyes Closed</div>
+          </li>
+        </ul>
         <br>
-        <li class="btn btn-danger disabled" style="height: 70px; padding:0;"><h3 style="color:white;">PatTube</h3></li>
-        <br><br>
-          
-        <li id="sorry"><video preload="metadata" class="sorry" width="150" height="100" muted="muted">
-          <source src="sorry.mp4#t=0.7" type="video/mp4"></video>
-            <div class="link"><br><br>Halsey - Sorry</div>
-          </li>
-          
-        <li id="yellow"><video preload="metadata" class="yellow" width="150" height="100" muted="muted">
-          <source src="yellow.mp4#t=0.7" type="video/mp4"></video>
-            <div class="link"><br><br>Kina Grannis -<br> Yellow</div>
-          </li>
-           
-        <li id="withoutyou"><video preload="metadata" class="withoutyou" width="150" height="100" muted="muted">
-          <source src="withoutyou.mp4#t=0.7" type="video/mp4"></video>
-            <div class="link"><br><br> Hearts&Colors <br> - Without you</div>
-          </li>
-          
-        <li id="movie"><video preload="metadata" class="movie" width="150" height="100" muted="muted">
-          <source src="movie.mp4#t=0.7" type="video/mp4"></video>
-            <div class="link"><br><br>Downloaded <br>Movie</div>
-          </li>
 
-          <li id="eyesclosed"><video preload="metadata" class="eyesclosed" width="150" height="100" muted="muted">
-              <source src="eyesclosed.mp4#t=0.7" type="video/mp4"></video>
-                <div class="link"><br><br>Halsey - <br>Eyes Closed</div>
-              </li>            
-      </ul><br>
-    
-    </div>
+      </div>
 
-    <div class="col-sm-9">
-      
+      <div class="col-sm-7">
+
         <hr>
-      <h4>&nbsp&nbsp&darr; Now playing &darr;</h4>
-      
-          <hr>
-      <h3 id="title">&nbspHalsey - Eyes Closed (Stripped)</h3>
-      <div class="video_container">
-      <video id = "video_content" width="800" height="440" muted autoplay>
-        <source id="video_source" src='eyesclosed.mp4' type='video/mp4'></video>
+        <h3>&nbsp&nbsp&darr; Now playing... &darr;</h3>
+        <hr>
+        <h2 id="title">&nbspHalsey - Eyes Closed (Stripped)</h2>
+        <div class="video_container">
+          <video id="video_content" width="710" height="440" muted autoplay>
+            <source id="video_source" src='eyesclosed.mp4' type='video/mp4'>
+          </video>
           <div class="controls">
-              <a href="#" id="fastbackwards" class="btn btn-default"><i class="glyphicon glyphicon-fast-backward"></i></a>
-              <a href="#" id="backwards" class="btn btn-default"><i class="glyphicon glyphicon-backward"></i></a>
-              <a href="#" id="stop" class="btn btn-default"><i class="glyphicon glyphicon-stop"></i></a>
-              <a href="#" id="play" class="btn btn-default"><i class="glyphicon glyphicon-play"></i></a>
-              <a href="#" id="pause" class="btn btn-default"><i class="glyphicon glyphicon-pause"></i></a>
-              <a href="#" id="forwards" class="btn btn-default"><i class="glyphicon glyphicon-forward"></i></a>
-              <a href="#" id="fastforwards" class="btn btn-default"><i class="glyphicon glyphicon-fast-forward"></i></a>
-              <a href="#" id="mute" class="btn btn-default"><i class="glyphicon glyphicon-volume-off"></i></button>
-              <a id="volume-up" class="btn btn-default"><i class="glyphicon glyphicon-volume-up"></i><input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1"></a>
-              </div>
-       </div>
-      <br><br>
+            <a href="#" id="fastbackwards" class="btn btn-default">
+              <i class="glyphicon glyphicon-fast-backward"></i>
+            </a>
+            <a href="#" id="backwards" class="btn btn-default">
+              <i class="glyphicon glyphicon-backward"></i>
+            </a>
+            <a href="#" id="stop" class="btn btn-default">
+              <i class="glyphicon glyphicon-stop"></i>
+            </a>
+            <a href="#" id="play" class="btn btn-default">
+              <i class="glyphicon glyphicon-play"></i>
+            </a>
+            <a href="#" id="pause" class="btn btn-default">
+              <i class="glyphicon glyphicon-pause"></i>
+            </a>
+            <a href="#" id="forwards" class="btn btn-default">
+              <i class="glyphicon glyphicon-forward"></i>
+            </a>
+            <a href="#" id="fastforwards" class="btn btn-default">
+              <i class="glyphicon glyphicon-fast-forward"></i>
+            </a>
+            <a href="#" id="mute" class="btn btn-default">
+              <i class="glyphicon glyphicon-volume-off"></i>
+              </button>
+              <a id="volume-up" class="btn btn-default">
+                <i class="glyphicon glyphicon-volume-up"></i>
+                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+              </a>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-2 sidenav-right">
+
+      </div>
     </div>
   </div>
-</div>
-
-<footer class="container-fluid">
-  <p>® Patrycja Słabosz with Gregory&Monsters</p>
-</footer>
+  <div class="footer container-fluid">
+    <p>® Patrycja Słabosz with Gregory&Monsters</p>
+  </div>
 
 </body>
+
 </html>
